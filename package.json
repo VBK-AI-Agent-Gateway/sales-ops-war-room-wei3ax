@@ -1,0 +1,19 @@
+{
+  "name": "sales-ops-war-room",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Sales Ops War Room — Q3 销售复盘可交互作战室（模拟演示数据）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.4.8"
+  }
+}

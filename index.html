@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sales Ops War Room</title>
+  <meta name="description" content="Sales Ops War Room — Q3 销售复盘可交互作战室（模拟演示数据）" />
+</head>
+<body>
+  <div class="wrap">
+    <div id="boot-error" class="boot-error" hidden></div>
+
+    <header class="hdr">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>Sales Ops War Room <span id="data-flag" class="flag">加载中…</span></h1>
+          <div class="sub">Q3 销售复盘 · 可交互作战室</div>
+        </div>
+      </div>
+      <div class="hdr-actions">
+        <button class="btn sm" id="theme-toggle" type="button">🌙 暗色</button>
+        <button class="btn sm" id="refresh-btn" type="button">↻ 刷新数据</button>
+        <button class="btn primary sm" id="export-btn" type="button">⬇ 导出 CSV</button>
+      </div>
+    </header>
+
+    <div class="meta">
+      <span id="meta-line">读取元数据…</span>
+    </div>
+    <div class="meta">
+      <span id="version-line">version.json 读取中…</span>
+      <span>last refresh: <b id="last-refresh">—</b></span>
+    </div>
+
+    <div id="data-error" class="err-banner" hidden></div>
+
+    <!-- KPI cards -->
+    <section id="kpis" class="kpis"></section>
+
+    <!-- charts + funnel -->
+    <section class="grid">
+      <div class="card">
+        <h2><span class="dot"></span>销售排名 · 已签约 + 加权管道</h2>
+        <p class="desc">按销售代表堆叠展示已签约金额与加权管道贡献</p>
+        <div class="chart-box"><canvas id="rankChart"></canvas></div>
+      </div>
+      <div class="card">
+        <h2><span class="dot"></span>漏斗 · 阶段金额 / 数量 / 转化</h2>
+        <p class="desc">各阶段商机数量、金额与向下一阶段转化率</p>
+        <div class="funnel" id="funnel"></div>
+      </div>
+    </section>
+
+    <!-- attainment + rep table -->
+    <section class="grid two">
+      <div class="card">
+        <h2><span class="dot"></span>预测达成率</h2>
+        <p class="desc">每位代表 (已签约+加权管道) / 目标</p>
+        <div class="chart-box sm"><canvas id="attainChart"></canvas></div>
+      </div>
+      <div class="card">
+        <h2><span class="dot"></span>代表明细排名</h2>
+        <p class="desc">目标 / 签约 / 加权管道 / 预测 / 达成率</p>
+        <div class="tbl-wrap" style="max-height:260px">
+          <table>
+            <thead><tr><th>代表</th><th>区域</th><th>目标</th><th>签约</th><th>加权管道</th><th>预测</th><th>达成率</th></tr></thead>
+            <tbody id="rep-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- risk table -->
+    <section class="grid">
+      <div class="card">
+        <h2><span class="dot"></span>风险商机 <span id="risk-count" class="count"></span></h2>
+        <p class="desc">高金额低概率 / 超 30 天未联系 / 临近关单缺下一步 / 回款逾期 / 续约风险</p>
+        <div class="toolbar">
+          <input id="search" type="search" placeholder="搜索客户 / 负责人 / 阶段 / 类型…" />
+          <select id="level-filter">
+            <option value="全部">全部等级</option>
+            <option value="高">高</option>
+            <option value="中">中</option>
+            <option value="低">低</option>
+          </select>
+        </div>
+        <div class="tbl-wrap">
+          <table id="risk-table">
+            <thead><tr>
+              <th data-key="level">等级</th><th data-key="type">类型</th><th data-key="account">客户</th>
+              <th data-key="rep">负责人</th><th data-key="stage">阶段</th>
+              <th data-key="amount">金额</th><th data-key="detail">说明</th>
+            </tr></thead>
+            <tbody id="risk-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="dot"></span>行动清单 · 按优先级</h2>
+        <p class="desc">下一步动作 / 负责人 / 截止日期 / 原因</p>
+        <ul class="actions" id="action-list"></ul>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div>Sales Ops War Room · 模拟演示数据，客户已匿名化，无真实手机号/邮箱/身份证/合同编号。</div>
+      <div>构建：<code id="ver-inline">version.json</code> · Vite + 原生 TypeScript + Chart.js</div>
+    </footer>
+  </div>
+  <noscript>本页面需要启用 JavaScript 才能运行。</noscript>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

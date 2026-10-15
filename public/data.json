@@ -1,0 +1,675 @@
+{
+  "meta": {
+    "title": "Sales Ops War Room",
+    "period": "2025-Q3",
+    "asOf": "2025-09-25",
+    "dataFlag": "模拟演示数据 (MOCK / DEMO ONLY)",
+    "disclaimer": "本页数据为模拟演示数据，客户名称已匿名化，不含任何真实手机号/邮箱/身份证/合同编号。",
+    "generatedAt": "2026-10-15T06:59:41.475883+00:00"
+  },
+  "kpi": {
+    "quarterTarget": 9818000,
+    "signedAmount": 7686000,
+    "weightedPipeline": 7046700,
+    "forecastAttainment": 1.5006,
+    "gap": 2132000,
+    "avgSalesCycleDays": 58.9,
+    "openOpps": 24,
+    "overdueNoContact": 10
+  },
+  "reps": [
+    {
+      "rep": "李*",
+      "region": "华东",
+      "target": 1373000,
+      "signed": 3631000,
+      "weighted_pipe": 1926400,
+      "forecast": 5557400,
+      "attain": 4.0476
+    },
+    {
+      "rep": "陈*",
+      "region": "西南",
+      "target": 1563000,
+      "signed": 1309000,
+      "weighted_pipe": 2176800,
+      "forecast": 3485800,
+      "attain": 2.2302
+    },
+    {
+      "rep": "刘*",
+      "region": "西北",
+      "target": 2310000,
+      "signed": 2205000,
+      "weighted_pipe": 928650,
+      "forecast": 3133650,
+      "attain": 1.3566
+    },
+    {
+      "rep": "赵*",
+      "region": "华南",
+      "target": 2202000,
+      "signed": 541000,
+      "weighted_pipe": 839700,
+      "forecast": 1380700,
+      "attain": 0.627
+    },
+    {
+      "rep": "王*",
+      "region": "华北",
+      "target": 2370000,
+      "signed": 0,
+      "weighted_pipe": 1175150,
+      "forecast": 1175150,
+      "attain": 0.4958
+    }
+  ],
+  "funnel": [
+    {
+      "stage": "线索",
+      "count": 4,
+      "amount": 2813000,
+      "conv": null
+    },
+    {
+      "stage": "需求确认",
+      "count": 8,
+      "amount": 8477000,
+      "conv": 2.0
+    },
+    {
+      "stage": "方案报价",
+      "count": 7,
+      "amount": 6103000,
+      "conv": 0.875
+    },
+    {
+      "stage": "商务谈判",
+      "count": 5,
+      "amount": 2714000,
+      "conv": 0.7143
+    },
+    {
+      "stage": "赢单",
+      "count": 7,
+      "amount": 7686000,
+      "conv": 1.4
+    },
+    {
+      "stage": "输单",
+      "count": 2,
+      "amount": 2488000,
+      "conv": 0.4
+    }
+  ],
+  "risks": [
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0016",
+      "account": "客户-华南C",
+      "rep": "赵*",
+      "amount": 1490000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "金额 1,490,000，赢率仅 25%"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0023",
+      "account": "客户-西南D",
+      "rep": "陈*",
+      "amount": 1426000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "金额 1,426,000，赢率仅 25%"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0023",
+      "account": "客户-西南D",
+      "rep": "陈*",
+      "amount": 1426000,
+      "stage": "需求确认",
+      "prob": null,
+      "detail": "已 47 天未联系"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0021",
+      "account": "客户-西南B",
+      "rep": "陈*",
+      "amount": 1355000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "金额 1,355,000，赢率仅 45%"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0005",
+      "account": "客户-华北E",
+      "rep": "王*",
+      "amount": 1330000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "金额 1,330,000，赢率仅 25%"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0005",
+      "account": "客户-华北E",
+      "rep": "王*",
+      "amount": 1330000,
+      "stage": "需求确认",
+      "prob": null,
+      "detail": "已 56 天未联系"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0013",
+      "account": "客户-华东G",
+      "rep": "李*",
+      "amount": 1293000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "金额 1,293,000，赢率仅 45%"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0013",
+      "account": "客户-华东G",
+      "rep": "李*",
+      "amount": 1293000,
+      "stage": "方案报价",
+      "prob": null,
+      "detail": "已 59 天未联系"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0015",
+      "account": "客户-华南B",
+      "rep": "赵*",
+      "amount": 1281000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "金额 1,281,000，赢率仅 25%"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0012",
+      "account": "客户-华东F",
+      "rep": "李*",
+      "amount": 1258000,
+      "stage": "商务谈判",
+      "prob": null,
+      "detail": "已 60 天未联系"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0004",
+      "account": "客户-华北D",
+      "rep": "王*",
+      "amount": 1150000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "金额 1,150,000，赢率仅 45%"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0031",
+      "account": "客户-西北D",
+      "rep": "刘*",
+      "amount": 1148000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "金额 1,148,000，赢率仅 25%"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0031",
+      "account": "客户-西北D",
+      "rep": "刘*",
+      "amount": 1148000,
+      "stage": "需求确认",
+      "prob": null,
+      "detail": "已 57 天未联系"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0028",
+      "account": "客户-西北A",
+      "rep": "刘*",
+      "amount": 1037000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "金额 1,037,000，赢率仅 45%"
+    },
+    {
+      "type": "回款逾期",
+      "level": "高",
+      "opp_id": "C-007",
+      "account": "客户-西北F",
+      "rep": "刘*",
+      "amount": 995400,
+      "stage": "已签约",
+      "prob": null,
+      "detail": "逾期 16 天未回款 995,400"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0030",
+      "account": "客户-西北C",
+      "rep": "刘*",
+      "amount": 956000,
+      "stage": "线索",
+      "prob": 0.1,
+      "detail": "金额 956,000，赢率仅 10%"
+    },
+    {
+      "type": "高金额低概率",
+      "level": "高",
+      "opp_id": "O0010",
+      "account": "客户-华东D",
+      "rep": "李*",
+      "amount": 817000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "金额 817,000，赢率仅 25%"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0010",
+      "account": "客户-华东D",
+      "rep": "李*",
+      "amount": 817000,
+      "stage": "需求确认",
+      "prob": null,
+      "detail": "已 35 天未联系"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0026",
+      "account": "客户-西南G",
+      "rep": "陈*",
+      "amount": 624000,
+      "stage": "需求确认",
+      "prob": null,
+      "detail": "已 32 天未联系"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0001",
+      "account": "客户-华北A",
+      "rep": "王*",
+      "amount": 547000,
+      "stage": "方案报价",
+      "prob": null,
+      "detail": "已 43 天未联系"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0022",
+      "account": "客户-西南C",
+      "rep": "陈*",
+      "amount": 386000,
+      "stage": "商务谈判",
+      "prob": null,
+      "detail": "已 34 天未联系"
+    },
+    {
+      "type": "超30天未联系",
+      "level": "高",
+      "opp_id": "O0011",
+      "account": "客户-华东E",
+      "rep": "李*",
+      "amount": 371000,
+      "stage": "商务谈判",
+      "prob": null,
+      "detail": "已 60 天未联系"
+    },
+    {
+      "type": "回款逾期",
+      "level": "高",
+      "opp_id": "C-003",
+      "account": "客户-华东C",
+      "rep": "李*",
+      "amount": 360300,
+      "stage": "已签约",
+      "prob": null,
+      "detail": "逾期 17 天未回款 360,300"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0021",
+      "account": "客户-西南B",
+      "rep": "陈*",
+      "amount": 1355000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "预计 -33 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0005",
+      "account": "客户-华北E",
+      "rep": "王*",
+      "amount": 1330000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "预计 -3 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0012",
+      "account": "客户-华东F",
+      "rep": "李*",
+      "amount": 1258000,
+      "stage": "商务谈判",
+      "prob": 0.7,
+      "detail": "预计 -71 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0004",
+      "account": "客户-华北D",
+      "rep": "王*",
+      "amount": 1150000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "预计 -75 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0031",
+      "account": "客户-西北D",
+      "rep": "刘*",
+      "amount": 1148000,
+      "stage": "需求确认",
+      "prob": 0.25,
+      "detail": "预计 -43 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0024",
+      "account": "客户-西南E",
+      "rep": "陈*",
+      "amount": 795000,
+      "stage": "线索",
+      "prob": 0.1,
+      "detail": "预计 -16 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0020",
+      "account": "客户-西南A",
+      "rep": "陈*",
+      "amount": 605000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "预计 -83 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0001",
+      "account": "客户-华北A",
+      "rep": "王*",
+      "amount": 547000,
+      "stage": "方案报价",
+      "prob": 0.45,
+      "detail": "预计 -27 天内关单但无下一步行动"
+    },
+    {
+      "type": "临近关单缺下一步",
+      "level": "中",
+      "opp_id": "O0002",
+      "account": "客户-华北B",
+      "rep": "王*",
+      "amount": 268000,
+      "stage": "线索",
+      "prob": 0.1,
+      "detail": "预计 -9 天内关单但无下一步行动"
+    }
+  ],
+  "actions": [
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "赵*",
+      "account": "客户-华南C",
+      "opp_id": "O0016",
+      "due": "2025-09-28",
+      "reason": "金额 1,490,000，赢率仅 25%",
+      "amount": 1490000
+    },
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "陈*",
+      "account": "客户-西南D",
+      "opp_id": "O0023",
+      "due": "2025-09-28",
+      "reason": "金额 1,426,000，赢率仅 25%",
+      "amount": 1426000
+    },
+    {
+      "priority": "高",
+      "type": "超30天未联系",
+      "action": "48小时内安排回访，重激活商机并更新下一步",
+      "owner": "陈*",
+      "account": "客户-西南D",
+      "opp_id": "O0023",
+      "due": "2025-09-27",
+      "reason": "已 47 天未联系",
+      "amount": 1426000
+    },
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "陈*",
+      "account": "客户-西南B",
+      "opp_id": "O0021",
+      "due": "2025-09-28",
+      "reason": "金额 1,355,000，赢率仅 45%",
+      "amount": 1355000
+    },
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "王*",
+      "account": "客户-华北E",
+      "opp_id": "O0005",
+      "due": "2025-09-28",
+      "reason": "金额 1,330,000，赢率仅 25%",
+      "amount": 1330000
+    },
+    {
+      "priority": "高",
+      "type": "超30天未联系",
+      "action": "48小时内安排回访，重激活商机并更新下一步",
+      "owner": "王*",
+      "account": "客户-华北E",
+      "opp_id": "O0005",
+      "due": "2025-09-27",
+      "reason": "已 56 天未联系",
+      "amount": 1330000
+    },
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "李*",
+      "account": "客户-华东G",
+      "opp_id": "O0013",
+      "due": "2025-09-28",
+      "reason": "金额 1,293,000，赢率仅 45%",
+      "amount": 1293000
+    },
+    {
+      "priority": "高",
+      "type": "超30天未联系",
+      "action": "48小时内安排回访，重激活商机并更新下一步",
+      "owner": "李*",
+      "account": "客户-华东G",
+      "opp_id": "O0013",
+      "due": "2025-09-27",
+      "reason": "已 59 天未联系",
+      "amount": 1293000
+    },
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "赵*",
+      "account": "客户-华南B",
+      "opp_id": "O0015",
+      "due": "2025-09-28",
+      "reason": "金额 1,281,000，赢率仅 25%",
+      "amount": 1281000
+    },
+    {
+      "priority": "高",
+      "type": "超30天未联系",
+      "action": "48小时内安排回访，重激活商机并更新下一步",
+      "owner": "李*",
+      "account": "客户-华东F",
+      "opp_id": "O0012",
+      "due": "2025-09-27",
+      "reason": "已 60 天未联系",
+      "amount": 1258000
+    },
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "王*",
+      "account": "客户-华北D",
+      "opp_id": "O0004",
+      "due": "2025-09-28",
+      "reason": "金额 1,150,000，赢率仅 45%",
+      "amount": 1150000
+    },
+    {
+      "priority": "高",
+      "type": "高金额低概率",
+      "action": "拉通售前做赢率复盘，补强方案并锁定关键决策人",
+      "owner": "刘*",
+      "account": "客户-西北D",
+      "opp_id": "O0031",
+      "due": "2025-09-28",
+      "reason": "金额 1,148,000，赢率仅 25%",
+      "amount": 1148000
+    }
+  ],
+  "overdue": [
+    {
+      "opp_id": "O0011",
+      "account": "客户-华东E",
+      "rep": "李*",
+      "stage": "商务谈判",
+      "amount": 371000,
+      "days": 60
+    },
+    {
+      "opp_id": "O0012",
+      "account": "客户-华东F",
+      "rep": "李*",
+      "stage": "商务谈判",
+      "amount": 1258000,
+      "days": 60
+    },
+    {
+      "opp_id": "O0013",
+      "account": "客户-华东G",
+      "rep": "李*",
+      "stage": "方案报价",
+      "amount": 1293000,
+      "days": 59
+    },
+    {
+      "opp_id": "O0031",
+      "account": "客户-西北D",
+      "rep": "刘*",
+      "stage": "需求确认",
+      "amount": 1148000,
+      "days": 57
+    },
+    {
+      "opp_id": "O0005",
+      "account": "客户-华北E",
+      "rep": "王*",
+      "stage": "需求确认",
+      "amount": 1330000,
+      "days": 56
+    },
+    {
+      "opp_id": "O0023",
+      "account": "客户-西南D",
+      "rep": "陈*",
+      "stage": "需求确认",
+      "amount": 1426000,
+      "days": 47
+    },
+    {
+      "opp_id": "O0001",
+      "account": "客户-华北A",
+      "rep": "王*",
+      "stage": "方案报价",
+      "amount": 547000,
+      "days": 43
+    },
+    {
+      "opp_id": "O0010",
+      "account": "客户-华东D",
+      "rep": "李*",
+      "stage": "需求确认",
+      "amount": 817000,
+      "days": 35
+    },
+    {
+      "opp_id": "O0022",
+      "account": "客户-西南C",
+      "rep": "陈*",
+      "stage": "商务谈判",
+      "amount": 386000,
+      "days": 34
+    },
+    {
+      "opp_id": "O0026",
+      "account": "客户-西南G",
+      "rep": "陈*",
+      "stage": "需求确认",
+      "amount": 624000,
+      "days": 32
+    }
+  ]
+}
