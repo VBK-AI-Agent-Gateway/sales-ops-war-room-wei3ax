@@ -6,7 +6,8 @@
   "description": "Sales Ops War Room — Q3 销售复盘可交互作战室（模拟演示数据）",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
